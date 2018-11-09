@@ -9,7 +9,7 @@
 #include "windows.h"
 #include <NodeInfo.h>
 #include <Screen.h>
-#include <iostream.h>
+#include <iostream>
 #include <Roster.h>
 
 class BephoneApp : public BApplication

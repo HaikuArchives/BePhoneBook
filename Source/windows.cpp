@@ -4,7 +4,7 @@
 #include "windows.h"
 #include "bephone.h"
 #include "Dial.h"
-
+#include <iostream>
 #include "be/kernel/OS.h"
 
 MainWindow::MainWindow(BRect rect):BWindow(rect,"BePhoneBook",B_TITLED_WINDOW,B_NOT_ZOOMABLE | B_NOT_RESIZABLE)
@@ -281,7 +281,7 @@ void MainWindow::MessageReceived(BMessage* msg)
 				msg->FindString("Note",i,(const char**)&Note);
 				msg->FindString("Location",i,(const char**)&Location);
 				
-				cout<<Name<<Tel<<Note<<Location<<"\n";
+				std::cout<<Name<<Tel<<Note<<Location<<"\n";
 				
 				Temp->Name=new char[(strlen(Name)+1)];
 				strcpy(Temp->Name,Name);
