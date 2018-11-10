@@ -32,11 +32,11 @@ SRCS =  Source/windows.cpp Source/views.cpp Source/unarchive.cpp Source/dos_beos
 
 #	Specify the resource definition files to use. Full or relative paths can be
 #	used.
-RDEFS = 
+RDEFS = Source/Bephonebook.rdef
 
 #	Specify the resource files to use. Full or relative paths can be used.
 #	Both RDEFS and RSRCS can be utilized in the same Makefile.
-RSRCS =  Source/Bephonebook.rsrc
+RSRCS =
 
 # End Pe/Eddie support.
 # @<-src@ 
